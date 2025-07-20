@@ -2,520 +2,1292 @@
 <html lang="en">
 
 <head>
-    <!-- font -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jafi Associates</title>
-    <!-- tailwind css cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="./output.css" rel="stylesheet">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper.js for slider -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Fairplay Display (via Adobe Fonts) and Poppins from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://use.typekit.net/your-typekit-id.css">
+    <style>
+        /* Use Fairplay Display for headings and subheadings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .heading,
+        .subheading,
+        .font-heading {
+            font-family: 'fairplay-display', serif !important;
+        }
+
+        /* Use Poppins for all other text */
+        body,
+        p,
+        li,
+        input,
+        textarea,
+        button,
+        label,
+        .font-body {
+            font-family: 'Poppins', Arial, sans-serif !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Font (optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Add FontAwesome + Material Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Tailwind custom glitter effect service-->
+    <style>
+        .glitter {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #b3c6ff, 0 0 30px #809fff;
+        }
+    </style>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+    <!-- font link -->
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    </link>
+
+    <style>
+        .swiper-slide {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #header-title {
+            font-family: 'constantia', serif !important;
+        }
+
+        li {
+            font-family: 'cambria', sans-serif !important;
+        }
+
+        p {
+            font-family: 'cambria', sans-serif !important;
+            font-weight: bolder;
+        }
+
+        #headerbgImage {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6269899), rgba(255, 255, 255, 0.6269899)),
+                    url('./JAFI - LOGO/ca-india-seeklogo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 290px 185px;
+        
+        }
+    </style>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
 </head>
 
-<body>
-    <!-- Nav Bar -->
-    <nav class="sticky z-40 flex items-center justify-between bg-blue-300 shadow-xl  top-0   ">
-        <H1 class="font-bold text-4xl p-4   ">JAFI ASSOCIATES </H1>
-        <ul class="hidden gap-5 text-gray-50 md:flex ">
-            <li>
-                <a class="hover:underline hover:text-black" href="#Home">Home</a>
+<body class="bg-[#fdf1e6] font-[Poppins]">
 
-            </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="#about-us">About Us</a>
-            </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="#Service">Services</a>
-            </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="#Contact Us">Contact Us</a>
-            </li>
-
-            <li class="">
-                <a href="https://api.whatsapp.com/send/?phone=918608060751&text=Hello,%20I%20have%20a%20query!"
-                    target="_blank"
-                    class="font-bold border-2  bg-black text-shadow-white rounded-xl p-1 hover:underline hover:bg-gray-300 animate-pulse shadow-xl hover:text-black">
-                    WhatsApp</a>
-            </li>
-        </ul>
-
-        <a href="https://api.whatsapp.com/send/?phone=918608060751&text=Hello,%20I%20have%20a%20query!" target="_blank"
-            class="font-bold border-2 md:hidden bg-black text-white rounded-xl p-1 hover:underline hover:bg-gray-300 animate-pulse shadow-xl hover:text-black">
-            WhatsApp</a>
-
-
+     <nav class="bg-blue-900 text-white w-full">
+        <div class="max-w-7xl  mx-auto px-4 py-3 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-0">
+            
+        </div>
     </nav>
-    <!-- Home Section -->
-    <div id="Home" class="bg-white text-gray-800 font-sans">
-        <!-- Promo Section -->
-        <section class=" px-6 bg-gray-50">
-            <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+    <!-- Header -->
+    <header class="text-center py-10 bg-white shadow-sm" style="padding-bottom: 1.0rem;" id="headerbgImage">
+        <div class="flex items-center justify-center gap-4 mb-2">
+            <div class="h-[2px] w-24 bg-blue-900"></div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-900 tracking-widest" id="header-title">
+                JAFI ASSOCIATES
+            </h1>
+            <div class="h-[2px] w-24 bg-blue-900"></div>
+        </div>
+        <p class="text-[42px] text-blue-900 font-[Cambria] uppercase tracking-widest font-semibold">
+            Auditing Firm
+        </p>
+        </div>
+    </header>
 
-                <!-- Text Content -->
-                <div class="lg:w-1/2 text-center lg:text-left">
-                    <h1 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-                        JAFI Associates is a "CA" firm providing services in the fields
-                    </h1>
-                    <p class="text-xl text-gray-700 font-bold  mb-4">
-                        Like Accounting, Auditing, Advisory
-                    </p>
-                    <p class="text-md text-gray-600 mb-6 font-bold text-xl">
-                        consultancy to various individuals, corporates and industries.
-                    </p>
+    <nav class="bg-blue-900 text-white w-full">
+        <div class="max-w-7xl  mx-auto px-4 py-3 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-0">
+            <p
+                class="text-3xl md:text-4xl font-bold text-white font-serif italic tracking-wide drop-shadow-lg animate-pulse">
+                “JAFI Is Here to Balance Your Profit” </p>
 
-                    <h2 class="text-xl text-green-600 font-semibold mb-6">We are 100% Online!!</h2>
+        </div>
+    </nav>
 
-                    <div class="flex justify-center lg:justify-start gap-10">
-                        <div class="text-center">
-                            <p class="text-3xl font-bold text-blue-800">250+</p>
-                            <p class="text-gray-600">Happy Customers</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-3xl font-bold text-yellow-500">4.8/5</p>
-                            <p class="text-gray-600">Rating</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Blue Navigation Bar -->
+    <nav class="bg-blue-900 text-white  w-full">
+        <div class="max-w-7xl  mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
 
-                <!-- Image or Illustration -->
-                <div class="lg:w-1/2    hidden p-5 md:block ">
-                    <img src="./images/Hero section.png" alt="Business icons" class="w-full rounded-lg shadow-md">
-                </div>
+            <!-- Left: Logo & Menu -->
+            <div class="flex items-center  gap-6">
 
+                <!-- <img src="./JAFI - LOGO/JAFI LOGO.jpg" alt="Jafi Associates Logo"
+                    class="h-12 w-auto rounded shadow-md" /> -->
+                <!-- Menu Items -->
+                <ul class="flex gap-6 text-sm  font-bold">
+                    <li><a href="#" class="hover:underline text-xl">Home</a></li>
+                    <li><a href="#" class="hover:underline text-xl">About Us</a></li>
+                    <li><a href="#" class="hover:underline text-xl">Services</a></li>
+                    <li><a href="#" class="hover:underline text-xl">Contact</a></li>
+                </ul>
             </div>
-        </section>
-    </div>
 
-    <!-- About Us -->
-    <!-- Services Grid -->
-    <div id="about-us" class="bg-gray-100 text-gray-800">
-        <section class="py-16 px-6">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Why Choose Jafi Associates
-                </h2>
-                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-
-                    <!-- Card 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow text-center">
-                        <div class="text-blue-600 text-4xl mb-4">👨‍💼</div>
-                        <h3 class="text-xl font-semibold mb-2">Expertise You Can Rely On</h3>
-                        <p class="text-gray-600">Our certified accountants have years of experience across multiple
-                            industries.</p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow text-center">
-                        <div class="text-green-600 text-4xl mb-4">✅</div>
-                        <h3 class="text-xl font-semibold mb-2">Accuracy & Compliance</h3>
-                        <p class="text-gray-600">We ensure your financial records are error-free and tax compliant.</p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow text-center">
-                        <div class="text-yellow-500 text-4xl mb-4">⏰</div>
-                        <h3 class="text-xl font-semibold mb-2">Time-Saving Solutions</h3>
-                        <p class="text-gray-600">Let us handle your bookkeeping, tax filings, and payroll with
-                            precision.</p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-white p-6 rounded-lg shadow text-center">
-                        <div class="text-teal-500 text-4xl mb-4">💻</div>
-                        <h3 class="text-xl font-semibold mb-2">Advanced Technology</h3>
-                        <p class="text-gray-600">We use cutting-edge tools for smarter financial decision-making.</p>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="bg-white p-6 rounded-lg shadow text-center">
-                        <div class="text-gray-600 text-4xl mb-4">🤝</div>
-                        <h3 class="text-xl font-semibold mb-2">Personalized Service</h3>
-                        <p class="text-gray-600">Strategies tailored specifically to your individual or business goals.
-                        </p>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="bg-white p-6 rounded-lg shadow text-center">
-                        <div class="text-red-500 text-4xl mb-4">📞</div>
-                        <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
-                        <p class="text-gray-600">Prompt, professional help whenever you need it—we’re just a call away.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Service -->
-    <div id="Service" class="min-h-screen bg-gray-100  px-4">
-        <h2 class="text-3xl font-bold text-center mb-10 text-blue-900">Our Services</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-            <!-- Box 1: Auditing Services -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-center">Auditing Services</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ Statutory Audits</li>
-                        <li class="text-xl font-bold">✅ Tax Audits</li>
-                        <li class="text-xl font-bold">✅ Internal Audits</li>
-                        <li class="text-xl font-bold">✅ IT Audits</li>
-                        <li class="text-xl font-bold">✅ Vendor Compliance Audit</li>
-                        <li class="text-xl font-bold">✅ Limited Scope Review</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <a href="https://api.whatsapp.com/send/?phone=918608060751&text=Hello,%20I%20have%20a%20query!"
-                        target="_blank" rel="noopener noreferrer">
-                        <button
-                            class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                            Enquiry
-                        </button>
+            <!-- Right: Contact Info & Icons -->
+            <div class="flex flex-col md:flex-row items-center font-bold  text-sm gap-2 md:gap-6">
+                <div class="flex items-center gap-2">
+                    <span class="material-icons text-base">email</span>
+                    <a href="mailto:finance@jafiassociates.com" class="hover:underline">
+                        finance@jafiassociates.com
                     </a>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
                 </div>
-            </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-icons text-base">phone</span>
+                    <span>90478 48420 / 9176 16283</span>
+                </div>
+                <!-- Icons -->
 
-            <!-- Box 2: Other Assurance Services -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-center">Other Assurance Services</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ Risk Management</li>
-                        <li class="text-xl font-bold">✅ Internal Financial Controls</li>
-                        <li class="text-xl font-bold">✅ Risk Control Matrix</li>
-                        <li class="text-xl font-bold">✅ SOP Documentation</li>
-                        <li class="text-xl font-bold">✅ UN/Govt/NGO Monitoring</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <button
-                        class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">Enquiry</button>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
-                </div>
-            </div>
-
-            <!-- Box 3: Business Advisory Services -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-center">Business Advisory Services</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ Business Valuation</li>
-                        <li class="text-xl font-bold">✅ Due Diligence</li>
-                        <li class="text-xl font-bold">✅ SOPs</li>
-                        <li class="text-xl font-bold">✅ Fixed Asset Register</li>
-                        <li class="text-xl font-bold">✅ Compliance</li>
-                        <li class="text-xl font-bold">✅ International Taxation</li>
-                        <li class="text-xl font-bold">✅ Transfer Pricing</li>
-                        <li class="text-xl font-bold">✅ Litigation & Representation</li>
-                        <li class="text-xl font-bold">✅ Indirect & Direct Taxation</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <button
-                        class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">Enquiry</button>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
-                </div>
-            </div>
-
-            <!-- Box 4: Tax & Regulatory Services -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-center">Tax & Regulatory Services</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ Secretarial Compliance</li>
-                        <li class="text-xl font-bold">✅ Corporate & Other Laws</li>
-                        <li class="text-xl font-bold">✅ Foreign Exchange Compliance</li>
-                        <li class="text-xl font-bold">✅ Transaction Services</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <button
-                        class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">Enquiry</button>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
-                </div>
-            </div>
-
-            <!-- Box 5: Corporate Finance Services -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-center">Corporate Finance Services</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ Company Finance</li>
-                        <li class="text-xl font-bold">✅ Equity Valuation</li>
-                        <li class="text-xl font-bold">✅ Debt Raising</li>
-                        <li class="text-xl font-bold">✅ Advisory Sell-side</li>
-                        <li class="text-xl font-bold">✅ Advisory Buy-side</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <button
-                        class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">Enquiry</button>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
-                </div>
-            </div>
+                <!-- Social Icons as images in larger colored squares -->
+                <!-- <div class="flex gap-2 pt-1">
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 rounded-md flex items-center justify-center hover:bg-[#005983] transition"
+                        title="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                            alt="LinkedIn" class="w-6 h-6 invert" />
+                    </a>
+                    <a href="#"
+                        class="bg-[#1DA1F2] w-10 h-10 rounded-md flex items-center justify-center hover:bg-[#0d8ddb] transition"
+                        title="Twitter">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"
+                            class="w-6 h-6 invert" />
+                    </a>
+                    <a href="#"
+                        class="bg-[#25D366] w-10 h-10 rounded-md flex items-center justify-center hover:bg-[#128C7E] transition"
+                        title="WhatsApp">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+                            alt="WhatsApp" class="w-6 h-6 invert" />
+                    </a>
+                    </a>
+                </div> -->
 
 
-            <!-- Box 6: BPO Services -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-center">Business Process Outsourcing</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ General Accounting</li>
-                        <li class="text-xl font-bold">✅ Receivables Management</li>
-                        <li class="text-xl font-bold">✅ Payables Management</li>
-                        <li class="text-xl font-bold">✅ Payroll Processing</li>
-                        <li class="text-xl font-bold">✅ UK/US Taxation</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <button
-                        class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">Enquiry</button>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
-                </div>
-            </div>
 
-            <!-- Box 7: Registrations -->
-            <div
-                class="bg-white shadow-xl rounded-lg p-6 transform transition duration-500 hover:scale-105 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 text-center">Registrations</h3>
-                    <ul class="space-y-2 text-gray-700 text-sm max-h-40 overflow-y-auto pr-2">
-                        <li class="text-xl font-bold">✅ Proprietorship</li>
-                        <li class="text-xl font-bold">✅ Partnership</li>
-                        <li class="text-xl font-bold">✅ Private Ltd Company</li>
-                        <li class="text-xl font-bold">✅ Public Ltd Company</li>
-                        <li class="text-xl font-bold">✅ GST Registration</li>
-                        <li class="text-xl font-bold">✅ Import Export Code</li>
-                        <li class="text-xl font-bold">✅ FSSAI Registration</li>
-                        <li class="text-xl font-bold">✅ Trade License</li>
-                        <li class="text-xl font-bold">✅ Professional Tax</li>
-                    </ul>
-                </div>
-                <div class="text-center mt-6">
-                    <button
-                        class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">Enquiry</button>
-                    <p class="text-xs text-gray-500 mt-2">* Terms & Conditions Apply</p>
-                </div>
             </div>
 
         </div>
-    </div>
+    </nav>
 
-    <br>
-    <!-- WhatsApp Floating Button -->
-    <a href="https://api.whatsapp.com/send/?phone=918608060751&text=Hello,%20I%20have%20a%20query!" target="_blank"
-        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-transform transform hover:scale-110">
-        <!-- WhatsApp SVG Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 32 32">
-            <path
-                d="M16.04 0C7.183 0 .043 7.141.043 15.984a15.833 15.833 0 002.191 8.102L.086 32l8.187-2.127a15.844 15.844 0 007.767 1.992h.002c8.857 0 16.002-7.143 16.002-15.986C32.042 7.141 24.897 0 16.04 0zm0 29.309a13.41 13.41 0 01-6.842-1.871l-.49-.291-4.86 1.261 1.296-4.733-.318-.486a13.38 13.38 0 01-2.057-7.207c0-7.402 6.021-13.424 13.424-13.424s13.424 6.022 13.424 13.424-6.021 13.427-13.424 13.427zm7.367-10.09c-.404-.202-2.391-1.181-2.763-1.313-.371-.134-.641-.201-.911.203-.268.404-1.044 1.313-1.281 1.586-.235.269-.469.303-.873.102s-1.706-.628-3.248-2c-1.2-1.072-2.011-2.396-2.246-2.8-.235-.402-.026-.62.178-.821.183-.182.403-.469.604-.704.201-.237.268-.402.403-.672.134-.268.067-.504-.034-.705-.102-.202-.911-2.194-1.247-3.004-.328-.79-.661-.681-.911-.692l-.774-.013c-.268 0-.704.101-1.073.505-.371.404-1.408 1.375-1.408 3.35s1.44 3.885 1.64 4.155c.201.269 2.832 4.311 6.865 6.043.96.413 1.709.659 2.292.842.961.305 1.834.262 2.526.159.771-.115 2.391-.975 2.727-1.915.335-.94.335-1.745.235-1.915-.101-.168-.369-.269-.772-.471z" />
-        </svg>
-    </a>
+    <!-- Optional: Hero/Image Section below -->
 
-    <!-- Our Team Section -->
-    <section class="bg-white py-16 px-4 sm:px-6 lg:px-20">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <section class="relative w-full h-screen overflow-hidden text-white">
+        <!-- Slider Background -->
+        <div class="swiper mySwiper absolute inset-0 -z-10">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./JAFI WALLPAPERS/business-handshake-with-world-map-background.jpg"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./JAFI WALLPAPERS/Funding Your Startup_ How to Start an SEO Business.jpg"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./JAFI WALLPAPERS/vecteezy_business-finance-and-technology-investment-concept-invest_2411355.jpg"
+                        class="w-full h-full object-cover" />
+                </div>
 
-            <!-- Text Content -->
-            <div class="lg:w-1/2 text-gray-800 text-center lg:text-left">
-                <h2 class="text-4xl sm:text-5xl font-extrabold mb-6 tracking-tight text-blue-900">Our Team</h2>
-                <p class="text-lg sm:text-xl font-medium leading-relaxed">
-                    Presently, <strong class="font-bold">JAFI</strong> has two partners and more than twenty
-                    qualified, experienced, and dedicated staff with vast exposure and a zeal for excellence in
-                    providing professional services to clients.
-                </p>
-                <p class="mt-6 text-lg sm:text-xl font-medium leading-relaxed">
-                    The team is immensely experienced in reviewing expenses, compliance, and other professional
-                    activities.
-                </p>
-                <p class="mt-6 text-lg sm:text-xl font-medium leading-relaxed">
-                    Our team is committed to providing <span class="font-semibold underline">high quality</span>,
-                    <span class="font-semibold underline">cost-effective</span>, and
-                    <span class="font-semibold underline">innovative</span> services for your business.
-                </p>
             </div>
-
-            <!-- Image Content -->
-            <div class="lg:w-1/2">
-                <img src="./images/Screenshot 2025-06-19 230809.png" alt="Our Team"
-                    class="w-full rounded-xl shadow-xl object-cover">
-            </div>
-
         </div>
-    </section>
-
-    <!-- Mission -->
-    <section class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-20">
-        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-
-            <!-- Image Left -->
-            <div class="lg:w-1/2">
-                <img src="./images/mission.png" alt="Mission Image" class="w-full rounded-xl shadow-xl object-cover">
-            </div>
-
-            <!-- Text Right -->
-            <div class="lg:w-1/2 text-gray-800">
-                <h2 class="text-4xl sm:text-5xl font-extrabold mb-6 tracking-tight text-blue-900">Our Mission</h2>
-                <p class="text-lg sm:text-xl leading-relaxed font-medium space-y-4">
-                    <span class="block mb-4">
-                        To provide exceptional financial and professional services while maintaining the highest levels
-                        of integrity and professionalism.
-                    </span>
-                    <span class="block mb-4">
-                        To meet the current and future needs of our clients and help them to cultivate long-term
-                        success.
-                    </span>
-                    <span class="block mb-4">
-                        To respect our staff and those we serve as professionals and individuals.
-                    </span>
-                    <span class="block mb-4">
-                        To establish trust and loyalty between staff members, partners, and the firm’s clients.
-                    </span>
-                    <span class="block mb-4">
-                        To create a dynamic, open environment that encourages creative thinking, innovative ideas, and
-                        challenges staff to meet their optimal levels of success.
-                    </span>
-                    <span class="block">
-                        To create a harmonious balance between work and family life.
-                    </span>
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- vision -->
-    <section class="bg-white py-16 px-4 sm:px-6 lg:px-20">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-
-            <!-- Text Left -->
-            <div class="lg:w-1/2 text-gray-800">
-                <h2 class="text-4xl sm:text-5xl font-extrabold mb-6 tracking-tight text-blue-900">Our Vision</h2>
-                <p class="text-lg sm:text-xl leading-relaxed font-medium space-y-4">
-                    <span class="block mb-4">
-                        To be regionally recognized as the accounting firm of choice for providing comprehensive
-                        financial and professional services to individuals and businesses alike, while offering a
-                        supportive environment where our staff can grow and thrive.
-                    </span>
-                    <span class="block mb-4">
-                        To be the most trusted and respected accounting firm by delivering innovative, practical, and
-                        high-impact services that directly contribute to our clients’ long-term success.
-                    </span>
-                    <span class="block">
-                        Our aim is to foster an exceptional team culture where dedication, integrity, and collaboration
-                        empower both clients and staff to achieve excellence.
-                    </span>
-                </p>
-            </div>
-
-            <!-- Image Right -->
-            <div class="lg:w-1/2">
-                <img src="./images/vision.png" alt="Vision Image" class="w-full rounded-xl shadow-xl object-cover">
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Quote Section -->
-    <!-- Wonderful Quote Section -->
-    <section class="relative bg-blue-900 animate-fade-up px-6 sm:px-10 lg:px-20 overflow-hidden">
-        <!-- Decorative Background Blur -->
-        <div class="absolute -top-20 -left-20 w-96 h-96 bg-blue-700 opacity-30 rounded-full blur-3xl z-0"></div>
-        <div class="absolute bottom-0 -right-24 w-96 h-96 bg-yellow-400 opacity-20 rounded-full blur-2xl z-0"></div>
 
         <!-- Content -->
-        <div class="relative z-10 max-w-4xl mx-auto text-center text-white animate-fade-up">
-            <h2 class="text-4xl sm:text-5xl font-extrabold uppercase tracking-wide mb-6 text-white drop-shadow-lg">
-                Don't Worry
-            </h2>
-            <p class="text-2xl sm:text-3xl font-medium sm:font-semibold italic leading-relaxed">
-                We're here to <span class="text-yellow-300 font-extrabold underline underline-offset-4">balance your
-                    profit</span>
+        <div class="flex flex-col items-center justify-center h-full text-center px-4 bg-black bg-opacity-50">
+            <p data-aos="fade-down" data-aos-duration="800" class="text-lg md:text-xl uppercase tracking-widest">
+                Leave Money Problems to Us & Just
             </p>
-            <p class="mt-6 text-lg sm:text-xl font-medium text-gray-200 tracking-wide">— JAFI</p>
+
+            <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" id="hero-text"
+                class="text-4xl md:text-6xl font-bold mt-4 shadow-md">
+                Focus On Your Business
+            </h1>
+
+            <div class="mt-6 flex gap-4" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+                <a href="#service"
+                    class="bg-white text-[#2f47a1] px-6 py-3 font-semibold rounded hover:bg-gray-200">Learn
+                    More</a>
+                <a href="https://wa.me/918608060751?text=I%20am%20interested%20in%20your%20services." target="_blank"
+                    class="bg-yellow-400 text-black px-6 py-3 font-semibold rounded hover:bg-yellow-300">Get a
+                    Quote</a>
+            </div>
+        </div>
+
         </div>
     </section>
-    <!-- Contact Us Section -->
-    <section id="Contact Us" class="bg-[#010350] text-white py-16 px-6 sm:px-10">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
-            <p class="text-lg sm:text-xl mb-10">
-                Feel free to reach out to us for any queries or support.
-            </p>
 
-            <!-- Contact Details -->
-            <div
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-sm sm:text-base items-center justify-center">
+    <!-- About Us Section -->
+    <section class="bg-[#0b2c6c] text-white py-6 px-2 text-center font-[Cambria]">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 uppercase tracking-wide ">About Us</h2>
 
-                <!-- Phone -->
-                <div class="flex items-center justify-center gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                        <path fill-rule="evenodd"
-                            d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <a href="" class="text-white hover:text-yellow-300">+91 9344 752 381</a>
+        <p class="max-w-4xl mx-auto text-sm md:text-base leading-loose uppercase mb-4">
+            JAFI ASSOCIATES IS A "CA" FIRM PROVIDING SERVICES IN THE FIELDS OF ACCOUNTING, AUDITING,
+            ADVISORY AND CONSULTANCY TO VARIOUS INDIVIDUALS, CORPORATES AND INDUSTRIES.
+        </p>
+
+        <p class="max-w-4xl mx-auto text-sm md:text-base leading-loose uppercase mb-4">
+            WE HAVE THE SKILLS, KNOWLEDGE AND CHARISMA TO HANDLE ALL OF YOUR ACCOUNTING NEEDS.
+            AND ALSO READY TO TACKLE ANY FINANCIAL CHALLENGES THAT YOU MAY HAVE AS YOUR TRUSTED TAX
+            PLANNER AND FINANCIAL ADVISOR.
+        </p>
+
+        <p class="max-w-4xl mx-auto text-sm md:text-base leading-loose uppercase mb-6">
+            TO OUR CLIENTS, WE ARE NOT JUST SERVICE PROVIDERS, WE ARE TRUSTED BUSINESS ADVISORS.
+        </p>
+
+        <a href="https://wa.me/918608060751?text=I%20am%20interested%20in%20your%20services." target="_blank"
+            class="border border-white text-white px-5 py-2 text-xs tracking-wide uppercase hover:bg-white hover:text-[#0b2c6c] transition duration-300">
+            Register Now
+        </a>
+    </section>
+
+    <!-- WHO ARE WE -->
+
+    <!-- WHO WE ARE SLIDER WITH <img> IN <a> and FADE -->
+
+    <section class="relative w-full h-[600px]">
+        <div class="swiper mySwiper h-full relative overflow-hidden">
+            <div class="swiper-wrapper">
+
+                <!-- WHO WE ARE Slide -->
+                <div class="swiper-slide relative h-full cursor-pointer">
+                    <img src="./JAFI WALLPAPERS/silhouette-confident-businesspeople.jpg" alt="Who We Are"
+                        class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-80  z-10">
+                        <div
+                            class="bg-white/90 border-2 border-blue-800 p-6 md:p-10 max-w-4xl text-center font-[Poppins]">
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-blue-900 uppercase tracking-wide mb-4 font-[Playfair_Display] border-b-2 border-blue-800 inline-block px-6">
+                                Who We Are
+                            </h2>
+                            <p
+                                class="text-blue-900 text-sm md:text-base font-[Cambria] font-semibold leading-relaxed uppercase">
+                                We are a team of proficient and dedicated Chartered Accountants based in Tamil Nadu and
+                                other major cities in India.<br><br>
+                                We handle all branches of accounting and auditing, including accounts outsourcing,
+                                business taxation, corporate compliance, company formation and incorporation in India,
+                                and taxation of expatriates.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Email -->
-                <div class="flex items-center justify-center gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                        <path
-                            d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
-                        <path
-                            d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
-                    </svg>
-                    <a href="mailto:geniussahil786@gmail.com" class="text-white hover:text-yellow-300">
-                        Support@jafiassociates.com
+                <!-- WHY CHOOSE US Slide -->
+                <div class="swiper-slide relative h-full cursor-pointer">
+                    <img src="./JAFI WALLPAPERS/vecteezy_cloasing-the-deal-in-modern-office-interior_12439244.jpg"
+                        alt="Why Choose Us" class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-80 z-10">
+                        <div
+                            class="bg-white/90 border-2 border-blue-800 p-6 md:p-10 max-w-4xl text-center font-[Poppins]">
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-blue-900 uppercase tracking-wide mb-4 font-[Playfair_Display] border-b-2 border-blue-800 inline-block px-6">
+                                Why Choose Us
+                            </h2>
+                            <ul
+                                class="text-blue-900 text-sm md:text-base leading-relaxed font-[Cambria] font-semibold uppercase text-left list-disc px-6 space-y-2">
+                                <li>A fresh and practical approach to tax and account planning</li>
+                                <li>Customized service based on each client’s needs</li>
+                                <li>Innovative solutions that simplify processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MISSION Slide -->
+                <div class="swiper-slide relative h-full cursor-pointer">
+                    <img src="./JAFI WALLPAPERS/20062.jpg" alt="Mission"
+                        class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-80 z-10">
+                        <div
+                            class="bg-white/90 border-2 border-blue-800 p-6 md:p-10 max-w-4xl text-center font-[Poppins]">
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-blue-900 uppercase tracking-wide mb-4 font-[Playfair_Display] border-b-2 border-blue-800 inline-block px-6">
+                                Mission
+                            </h2>
+                            <ul
+                                class="text-blue-900 text-sm md:text-base leading-relaxed font-semibold font-[Cambria] uppercase text-left list-disc px-6 space-y-2">
+                                <li>Provide exceptional services with integrity and professionalism</li>
+                                <li>Support client success and long-term growth</li>
+                                <li>Foster trust and loyalty with clients and staff</li>
+                                <li>Encourage innovation, growth, and success</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VISION Slide -->
+                <div class="swiper-slide relative h-full cursor-pointer">
+                    <img src="./JAFI WALLPAPERS/ideas-progress-vision-inspiration-design-concept.jpg" alt="Vision"
+                        class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-90 z-10">
+                        <div
+                            class="bg-white/90 border-2 border-blue-800 p-6 md:p-10 max-w-4xl text-center font-[Poppins]">
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-blue-900 uppercase tracking-wide mb-4 font-[Playfair_Display] border-b-2 border-blue-800 inline-block px-6">
+                                Vision
+                            </h2>
+                            <p
+                                class="text-blue-900 text-sm md:text-base leading-relaxed font-[Cambria] font-semibold uppercase">
+                                To be the most trusted and respected accounting firm, providing comprehensive,
+                                innovative, and practical financial services in an exceptional team environment.<br><br>
+                                We aim to provide a nurturing environment for our staff and reliable, professional
+                                services for our clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OUR TEAM Slide -->
+                <div class="swiper-slide relative h-full cursor-pointer">
+                    <img src="./JAFI WALLPAPERS/business-concept-with-team-close-up.jpg" alt="Our Team"
+                        class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-80 z-10">
+                        <div
+                            class="bg-white/90 border-2 border-blue-800 p-6 md:p-10 max-w-4xl text-center font-[Poppins]">
+                            <h2
+                                class="text-2xl md:text-3xl font-bold text-blue-900 uppercase tracking-wide mb-4 font-[Playfair_Display] border-b-2 border-blue-800 inline-block px-6">
+                                Our Team
+                            </h2>
+                            <p
+                                class="text-blue-900 text-sm md:text-base leading-relaxed font-[Cambria] font-semibold uppercase">
+                                JAFI comprises two partners and over twenty qualified professionals, committed to
+                                providing top-tier services in compliance, audit, and financial advisory.<br><br>
+                                Our team includes Chartered Accountants, Tax Consultants, and Financial Advisors — all
+                                dedicated to excellence and client satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper Controls -->
+            <!-- <div class="swiper-pagination absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20"></div>
+            <div class="swiper-button-next text-blue-900"></div>
+            <div class="swiper-button-prev text-blue-900"></div> -->
+        </div>
+    </section>
+
+    <!-- Service -->
+
+    <section id="service"
+        class="relative bg-gradient-to-tr from-blue-950 via-slate-900 to-blue-950 text-white px-6 sm:px-12 py-24 overflow-hidden font-serif">
+        <!-- Background flair -->
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-5 pointer-events-none z-0">
+        </div>
+
+        <!-- Section Heading -->
+        <h2
+            class="text-6xl text-center font-extrabold tracking-wider mb-8 uppercase text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 drop-shadow-md animate-pulse z-10 relative">
+            Our Services
+        </h2>
+        <p
+            class="text-center text-lg max-w-4xl mx-auto text-blue-200 mb-16 leading-relaxed tracking-wide italic z-10 relative">
+            JAFI provides comprehensive solutions across various domains of professional practice.
+        </p>
+
+        <!-- Service Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 z-10 relative">
+            <!-- REGISTRATIONS -->
+            <div x-data="{ open: false }"
+                class="group relative border border-blue-300 bg-white p-6 rounded-2xl shadow-lg transition transform hover:scale-[1.03] hover:shadow-[0_0_30px_5px_rgba(0,255,255,0.2)] ring-1 ring-transparent hover:ring-cyan-400">
+
+                <!-- Title -->
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="./JAFI - LOGO/pngwing.com (6).png" class="w-10 h-10" alt="">
+                    <h3
+                        class="text-xl font-bold tracking-wide text-blue-900 group-hover:text-cyan-600 transition duration-300">
+                        REGISTRATIONS
+                    </h3>
+                </div>
+
+                <!-- Services List -->
+                <ul class="list-disc list-inside text-sm space-y-1 text-blue-800 font-medium font-[Cambria]">
+                    <li>Proprietorship</li>
+                    <li>Partnership</li>
+                    <li>Private Limited Company</li>
+                    <li>Public Limited Company</li>
+                    <li>GST Registration</li>
+                    <li>Import Export Code</li>
+                    <li>FSSAI Registration</li>
+                    <li>Professional Tax</li>
+                </ul>
+
+                <!-- Enquiry Button -->
+                <div class="flex justify-end mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20REGISTRATIONS%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
                     </a>
+                </div>
+            </div>
 
 
+            <!-- INCOME TAX & COMPLIANCES -->
+            <div x-data="{ open: false }"
+                class="group relative border border-blue-400 bg-white p-6 rounded-2xl shadow-lg transition transform hover:scale-[1.03] hover:shadow-[0_0_30px_5px_rgba(0,255,255,0.2)] ring-1 ring-transparent hover:ring-cyan-400 flex flex-col justify-between h-full">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="./JAFI - LOGO/Income-Tax-Department-Color.png" class="w-10 h-10" alt="">
+                        <h3
+                            class="text-xl font-bold tracking-wide text-blue-900 group-hover:text-teal-500 transition duration-300">
+                            INCOME TAX & COMPLIANCES
+                        </h3>
+                    </div>
+
+                    <ul class="list-disc list-inside font-[Cambria] text-sm space-y-1 text-blue-800 font-medium">
+                        <li>Return Filing</li>
+                        <li>Refund Filing</li>
+                        <li>E TDS Return Filing</li>
+                        <li>Assessment Handling</li>
+                        <li>TDS & TCS Filings</li>
+                        <li>Tax Plannings</li>
+                    </ul>
                 </div>
 
-                <!-- WhatsApp -->
-                <div class="flex items-center justify-center gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                        <path fill-rule="evenodd"
-                            d="M10 3c-4.31 0-8 3.033-8 7 0 2.024.978 3.825 2.499 5.085a3.478 3.478 0 0 1-.522 1.756.75.75 0 0 0 .584 1.143 5.976 5.976 0 0 0 3.936-1.108c.487.082.99.124 1.503.124 4.31 0 8-3.033 8-7s-3.69-7-8-7Zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-2-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-                            clip-rule="evenodd" />
-                    </svg>
+                <!-- Enquiry Button Right Aligned -->
+                <div class="flex justify-end mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20INCOME%20TAX%20%26%20COMPLIANCES%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
 
-                    <a class="text-white hover:text-yellow-300"
-                        href="https://api.whatsapp.com/send/?phone=918608060751&text=Hello,%20I%20have%20a%20query!"
-                        target="_blank">Chat on WhatsApp</a>
+
+
+
+            <!-- GST FILING & AUDIT -->
+            <div x-data="{ open: false }"
+                class="group relative border border-blue-400 bg-white p-6 rounded-2xl shadow-lg transition transform hover:scale-[1.03] hover:shadow-[0_0_30px_5px_rgba(0,255,255,0.2)] ring-1 ring-transparent hover:ring-cyan-400 flex flex-col justify-between h-full">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="./JAFI - LOGO/gst-one-tax-logo.png" class="w-12 h-12" alt="">
+                        <h3
+                            class="text-xl font-bold tracking-wide text-blue-900 group-hover:text-pink-500 transition duration-300">
+                            GST FILING & AUDIT
+                        </h3>
+                    </div>
+
+                    <ul class="list-disc list-inside font-[Cambria] text-sm space-y-1 text-blue-800 font-medium">
+                        <li>GST Registrations</li>
+                        <li>Preparation & GST Filing</li>
+                        <li>Other GST Compliances</li>
+                        <li>Assessment Handling</li>
+                        <li>GSTR9 & 9C Returns</li>
+                        <li>GST Audit</li>
+                    </ul>
                 </div>
 
-                <!-- Location -->
-                <div class="flex items-center justify-center gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-                        <path fill-rule="evenodd"
-                            d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
-                            clip-rule="evenodd" />
-                    </svg>
+                <!-- Enquiry Button Right Aligned -->
+                <div class="flex justify-end mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20GST%20FILING%20%26%20AUDIT%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
 
-                    <a class="text-white hover:text-yellow-300" href="https://maps.app.goo.gl/92XJcFUCAznuvRxw9"
-                        target="_blank">Chennai, Tamilnadu, India</a>
+
+            <!-- BOOKKEEPING & ACCOUNTING -->
+            <div x-data="{ open: false }"
+                class="group relative border border-blue-400 font-[Cambria] bg-white p-6 rounded-2xl shadow-lg transition transform hover:scale-[1.03] hover:shadow-[0_0_30px_5px_rgba(0,255,255,0.2)] ring-1 ring-transparent hover:ring-cyan-400 flex flex-col justify-between h-full">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="./JAFI - LOGO/kisspng-questionnaire-checklist-survey-methodology-survey-5ac2cef5f2de81.2215288215227164059948.png"
+                            class="w-10 h-10" alt="">
+
+                        <h3
+                            class="text-xl font-bold tracking-wide text-blue-900 group-hover:text-yellow-500 transition duration-300">
+                            BOOKKEEPING & ACCOUNTING
+                        </h3>
+                    </div>
+
+                    <ul class="list-disc list-inside text-sm space-y-1 text-blue-800 font-medium">
+                        <li>Maintenance of Books</li>
+                        <li>Finalisation of Accounts</li>
+                        <li>Statutory Returns Compliances</li>
+                        <li>Banking & BRS Audit Services</li>
+                        <li>Secretarial Support</li>
+                    </ul>
+                </div>
+
+                <!-- Enquiry Button Right Aligned -->
+                <div class="flex justify-end mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20BOOKKEEPING%20%26%20ACCOUNTING%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- CFO & AUDIT SERVICES -->
+            <div x-data="{ open: false }"
+                class="group relative border border-blue-400 bg-white p-6 rounded-2xl shadow-lg transition transform hover:scale-[1.03] hover:shadow-[0_0_30px_5px_rgba(0,255,255,0.2)] ring-1 ring-transparent hover:ring-cyan-400 flex flex-col justify-between h-full">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="./JAFI - LOGO/5a2c793e6f9f96.7834712115128640624572.png" class="w-10 h-10" alt="">
+                        <h3
+                            class="text-xl font-bold tracking-wide text-blue-900 group-hover:text-rose-500 transition duration-300">
+                            CFO & AUDIT SERVICES
+                        </h3>
+                    </div>
+
+                    <ul class="list-disc list-inside text-sm font-[Cambria] text-blue-800 space-y-1 font-medium">
+                        <li>Tax Audit & Report</li>
+                        <li>Financial Strategy & Forecasting</li>
+                        <li>Budget to Actual Reporting</li>
+                        <li>Productivity & Efficiency Analysis</li>
+                        <li>Investment Strategy</li>
+                        <li>Cash Flow Analysis</li>
+                        <li>Board Presentation & Reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Enquiry Button Right Aligned -->
+                <div class="flex justify-end mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20CFO%20%26%20AUDIT%20SERVICES."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- TAXATION -->
+            <div x-data="{ open: false }"
+                class="group relative border border-blue-400 bg-white p-6 rounded-2xl shadow-lg transition transform hover:scale-[1.03] hover:shadow-[0_0_30px_5px_rgba(0,255,255,0.2)] ring-1 ring-transparent hover:ring-cyan-400 flex flex-col justify-between h-full">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="./JAFI - LOGO/pngwing.com (8).png" class="w-10 h-10" alt="">
+                        <h3
+                            class="text-xl font-bold tracking-wide text-blue-900 group-hover:text-pink-500 transition duration-300">
+                            TAXATION
+                        </h3>
+                    </div>
+
+                    <p class="text-sm text-blue-800 leading-relaxed font-[Cambria] font-medium">
+                        Our taxation consultancy solutions provide absolute control to our clients, enabling them to
+                        align
+                        their strategies with the constant change in tax policies and regulations. Complex
+                        issues are handled effectively by our highly efficient team of professionals.
+                    </p>
+                </div>
+
+                <!-- Enquiry Button Right Aligned -->
+                <div class="flex justify-end mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20TAXATION%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Copyright -->
-    <footer>
-        <p class="bg-black text-white text-center ">&copy;Copyright 2025 All Rights Reserved</p>
+
+    <!-- industeries we work -->
+    <section
+        class="relative bg-gradient-to-tr from-blue-950 via-slate-900 to-blue-950 text-white px-6 sm:px-12 py-24 overflow-hidden font-serif">
+        <!-- Background flair -->
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-5 pointer-events-none z-0">
+        </div>
+
+        <!-- Section Heading -->
+        <h2
+            class="text-5xl sm:text-6xl text-center font-extrabold tracking-wider mb-14 uppercase text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 drop-shadow-md animate-pulse z-10 relative">
+            Industries We Work
+        </h2>
+
+        <!-- Industries Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 z-10 relative">
+            <!-- Service Sectors -->
+            <div class="bg-gradient-to-br from-gray-800 via-neutral-700 to-gray-800 
+         p-6 rounded-3xl border border-orange-300 
+         shadow-[0_0_25px_rgba(253,186,116,0.4)] 
+         hover:shadow-[0_0_40px_10px_rgba(255,165,0,0.6)] 
+         transform hover:scale-[1.05] 
+         transition duration-300 ease-in-out 
+         ring-2 ring-orange-400/30 hover:ring-4 hover:ring-orange-300/70">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-orange-300 pb-2">Service Sectors</h3>
+                <ul class="list-disc font-[Cambria] list-inside text-orange-100 space-y-1">
+                    <li>Builders & Contractors</li>
+                    <li>Transport & Cargo</li>
+                    <li>Handling Services</li>
+                    <li>Shipping Agencies</li>
+                    <li>Business Process Outsourcing</li>
+                    <li>Insurance Management Services</li>
+                </ul>
+                <!-- Enquiry Button Centered -->
+                <div class="flex justify-center mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20SERVICE%20SECTORS%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Automotive -->
+            <div class="bg-gradient-to-br from-rose-900 via-red-800 to-rose-900 
+         p-6 rounded-3xl border border-red-400 
+         shadow-[0_0_25px_rgba(248,113,113,0.4)] 
+         hover:shadow-[0_0_40px_10px_rgba(252,165,165,0.7)] 
+         transform hover:scale-[1.05] 
+         transition duration-300 ease-in-out 
+         ring-2 ring-red-400/30 hover:ring-4 hover:ring-rose-300/70">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-red-400 pb-2">Automotive</h3>
+                <ul class="list-disc font-[Cambria] list-inside text-rose-100 space-y-1">
+                    <li>Car Body Components, Trim</li>
+                    <li>Heavy Engineering & Industrial Automation</li>
+                    <li>Electricals & Electronics</li>
+                    <li>Cable and Harness Manufacturing</li>
+                    <li>Engine Components Pressing and Molding</li>
+                </ul>
+                <!-- Enquiry Button Centered -->
+                <div class="flex justify-center mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20AUTOMOTIVE%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Information Technology -->
+            <div class="bg-gradient-to-br from-teal-900 via-emerald-800 to-teal-900 
+         p-6 rounded-3xl border border-emerald-400 
+         shadow-[0_0_25px_rgba(52,211,153,0.4)] 
+         hover:shadow-[0_0_40px_10px_rgba(110,231,183,0.7)] 
+         transform hover:scale-[1.05] 
+         transition duration-300 ease-in-out 
+         ring-2 ring-emerald-400/30 hover:ring-4 hover:ring-emerald-300/70">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-emerald-400 pb-2">Information Technology
+                </h3>
+                <ul class="list-disc font-[Cambria] list-inside text-emerald-100 space-y-1">
+                    <li>Telecom</li>
+                    <li>Web Design and Coding</li>
+                    <li>Course Education Development (IT)</li>
+                    <li>Software Testing Unit</li>
+                    <li>Data Support and Recovery Management</li>
+                    <li>Backend & Communication</li>
+                </ul>
+                <!-- Enquiry Button Centered -->
+                <div class="flex justify-center mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20INFORMATION%20TECHNOLOGY%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- Finance & Banking -->
+            <div class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 
+         p-6 rounded-3xl border border-blue-400 
+         shadow-[0_0_25px_rgba(96,165,250,0.4)] 
+         hover:shadow-[0_0_40px_10px_rgba(147,197,253,0.7)] 
+         transform hover:scale-[1.05] 
+         transition duration-300 ease-in-out 
+         ring-2 ring-blue-400/30 hover:ring-4 hover:ring-blue-300/70">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-blue-500 pb-2">Finance & Banking</h3>
+                <ul class="list-disc font-[Cambria] list-inside text-blue-100 space-y-1">
+                    <li>Asset Financing</li>
+                    <li>Banks</li>
+                    <li>Financial Services</li>
+                    <li>Non-Banking Financial Companies</li>
+                    <li>Mutual Funds</li>
+                    <li>Microfinance Institutions</li>
+                    <li>Term Lending Institutions</li>
+                </ul>
+
+                <!-- Enquiry Button Centered -->
+                <div class="flex justify-center mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20Finance%20%26%20Banking%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+            <!-- consumer Sectors -->
+            <div class="bg-gradient-to-br from-gray-800 via-neutral-700 to-gray-800 
+         p-6 rounded-3xl border border-orange-300 
+         shadow-[0_0_25px_rgba(253,186,116,0.4)] 
+         hover:shadow-[0_0_40px_10px_rgba(255,165,0,0.6)] 
+         transform hover:scale-[1.05] 
+         transition duration-300 ease-in-out 
+         ring-2 ring-orange-400/30 hover:ring-4 hover:ring-orange-300/70">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-orange-300 pb-2">Consumer Staples</h3>
+                <ul class="list-disc font-[Cambria] list-inside text-orange-100 space-y-1">
+                    <li>Super Markets</li>
+                    <li>Coffee Shops</li>
+                    <li>Homemade Organics</li>
+                    <li>Snacks & Beverages</li>
+                    <li>Hotels & Restaurants</li>
+                    <li>Household & Personal Products</li>
+                </ul>
+                <!-- Enquiry Button Centered -->
+                <div class="flex justify-center mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20CONSUMER%20STAPLES%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Others -->
+            <div class="bg-gradient-to-br from-indigo-800 via-blue-700 to-indigo-900 
+         p-6 rounded-3xl border border-indigo-400 
+         shadow-[0_0_25px_rgba(99,102,241,0.6)] 
+         hover:shadow-[0_0_40px_10px_rgba(147,197,253,0.9)] 
+         transform hover:scale-[1.05] 
+         transition duration-300 ease-in-out ring-2 ring-indigo-500/30 hover:ring-4 hover:ring-blue-300/60">
+                <h3 class="text-2xl font-bold text-white mb-4 border-b border-indigo-400 pb-2">Others</h3>
+                <ul class="list-disc font-[Cambria] list-inside text-indigo-100 space-y-1">
+                    <li>Film Making & Production House</li>
+                    <li>High Net Worth Individuals (Shares)</li>
+                    <li>Trading & Selling Goods</li>
+                    <li>HR Solution Academy</li>
+                    <li>Marketing & Media Creations</li>
+                </ul>
+                <!-- Enquiry Button Centered -->
+                <div class="flex justify-center mt-6">
+                    <a href="https://wa.me/919047848420?text=I%20am%20interested%20in%20Others%20services."
+                        target="_blank"
+                        class="px-5 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-full shadow-md hover:from-cyan-500 hover:to-blue-600 transform hover:scale-105 transition duration-300">
+                        📩 Enquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  software we use -->
+
+    <section class="bg-slate-100 py-20 px-6 sm:px-12 font-sans">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-4">
+                Software <span class="text-green-500">We Use</span>
+            </h2>
+            <p class="text-lg text-slate-600 mb-12">
+                Some <span class="text-green-600 font-semibold">solid tools</span> that our teams have up their sleeves
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <!-- QuickBooks -->
+                <div
+                    class="bg-white rounded-3xl shadow-md p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center">
+                    <img src="./JAFI - LOGO/quickbooks-online.webp" alt="Quickbooks" class="h-16 mb-4">
+                    <p class="text-sm font-semibold text-center text-slate-700">Quickbooks<br>Online</p>
+                </div>
+
+                <!-- Gusto -->
+                <div
+                    class="bg-white rounded-3xl shadow-md p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center">
+                    <img src="./JAFI - LOGO/kisspng-tally-solutions-tally-erp-9-enterprise-resource-pl-gst-5ad1fd7fd4a501.728414691523711359871.png"
+                        alt="Gusto" class="h-16 mb-4">
+                    <p class="text-sm font-semibold text-center text-slate-700">Tally</p>
+                </div>
+
+                <!-- Xero -->
+                <div
+                    class="bg-white rounded-3xl shadow-md p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center">
+                    <img src="https://cdn.worldvectorlogo.com/logos/xero-1.svg" alt="Xero" class="h-16 mb-4">
+                    <p class="text-sm font-semibold text-center text-slate-700">Xero</p>
+                </div>
+
+                <!-- ADP USA -->
+                <div
+                    class="bg-white rounded-3xl shadow-md p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center">
+                    <img src="./JAFI - LOGO/fresh books 1.png" alt="ADP" class="h-16 mb-4">
+                    <p class="text-sm font-semibold text-center text-slate-700">Fresh Books</p>
+                </div>
+
+                <!-- Zoho Books -->
+                <div
+                    class="bg-white rounded-3xl shadow-md p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center">
+                    <img src="JAFI - LOGO/zoho-logo-.png" alt="ZOHO Books" class="h-16 mb-4">
+                    <p class="text-sm font-semibold text-center text-slate-700">ZOHO Books</p>
+                </div>
+
+                <!-- Sage Intacct -->
+                <div
+                    class="bg-white rounded-3xl shadow-md p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center">
+                    <img src="https://cdn.worldvectorlogo.com/logos/sage.svg" alt="Sage Intacct" class="h-16 mb-4">
+                    <p class="text-sm font-semibold text-center text-slate-700">Sage Intacct</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+        class="relative bg-gradient-to-tr from-blue-950 via-slate-900 to-blue-950 text-white px-6 sm:px-12 py-24 overflow-hidden font-serif">
+        <!-- Background texture -->
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-5 pointer-events-none z-0">
+        </div>
+
+        <!-- Heading -->
+        <h2
+            class="text-5xl sm:text-6xl text-center font-extrabold tracking-wider mb-16 uppercase text-white drop-shadow-md animate-pulse z-10 relative">
+            Contact Us
+        </h2>
+
+
+        <!-- Form & Info -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 z-10 relative max-w-6xl mx-auto">
+            <!-- Info Left -->
+            <div class="space-y-8">
+                <h3 class="text-4xl font-extrabold text-cyan-300">Let’s Connect</h3>
+                <p class="text-blue-100 text-lg leading-relaxed">Reach out for collaborations, inquiries, or just a
+                    hello. We’re here to help!</p>
+
+                <div class="space-y-4 text-blue-200">
+                    <div class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="size-10 text-cyan-400">
+                            <path fill-rule="evenodd"
+                                d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <span class="hover:text-cyan-300 text-3xl transition">+91 90478 48420</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="size-10 text-cyan-400">
+                            <path
+                                d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
+                            <path
+                                d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
+                        </svg>
+
+                        <span class="hover:text-cyan-300 text-3xl transition">finance@jafiassociates.com</span>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="size-10 text-cyan-400">
+                            <path fill-rule="evenodd"
+                                d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <span class="hover:text-cyan-300 text-3xl  transition">Chennai & Trichy </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- WhatsApp Form -->
+            <form onsubmit="return sendToWhatsApp()"
+                class="bg-white text-slate-900 p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] space-y-6">
+                <div class="flex flex-col">
+                    <label for="name" class="text-sm font-bold mb-1">Name</label>
+                    <input id="name" type="text" required placeholder="Your Name"
+                        class="px-4 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="text-sm font-bold mb-1">Email</label>
+                    <input id="email" type="email" required placeholder="Your Email"
+                        class="px-4 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="phone" class="text-sm font-bold mb-1">Phone</label>
+                    <input id="phone" type="tel" required placeholder="Your Phone Number"
+                        class="px-4 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+                </div>
+                <div class="flex flex-col">
+                    <label for="message" class="text-sm font-bold mb-1">Message</label>
+                    <textarea id="message" rows="4" required placeholder="Your Message..."
+                        class="px-4 py-2 rounded-md border focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-600 hover:to-sky-600 text-white font-semibold py-2 rounded-md transition duration-300">
+                    Send via WhatsApp
+                </button>
+                <p id="thanksMessage" class="text-green-600 font-semibold hidden mt-2 text-center">✅ Thanks for
+                    submitting! Redirecting to WhatsApp...</p>
+            </form>
+        </div>
+        <!-- Social Icons in Empty Space -->
+        <div class="flex space-x-6 pt-10">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank"
+                class="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <img src="./JAFI - LOGO/linkdin logo.webp" alt="LinkedIn" class="w-6 h-6 object-contain" />
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919047848420" target="_blank"
+                class="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <img src="./JAFI - LOGO/pngwing.com.png" alt="WhatsApp" class="w-6 h-6 object-contain" />
+            </a>
+        </div>
+
+
+
+
+        <!-- Maps -->
+        <div class="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- Chennai -->
+            <div
+                class="rounded-3xl overflow-hidden border-4 border-cyan-300 shadow-[0_0_60px_10px_rgba(34,211,238,0.25)]">
+                <div class="bg-cyan-300 text-blue-900 font-bold text-lg py-2 px-4 text-center">Chennai</div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.0707253151359!2d80.25823055155962!3d12.96279918570252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525cedf6b378e9%3A0x675e1029443bc038!2sPalavakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600041!5e0!3m2!1sen!2sin!4v1752427199441!5m2!1sen!2sin"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Trichy -->
+            <div
+                class="rounded-3xl overflow-hidden border-4 border-cyan-300 shadow-[0_0_60px_10px_rgba(34,211,238,0.25)]">
+                <div class="bg-cyan-300 text-blue-900 font-bold text-lg py-2 px-4 text-center">Trichy</div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31350.340427386498!2d78.66168364200591!3d10.827181475485036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf509a09f0a0b%3A0x59ce9131ab163449!2sTennur%2C%20Tiruchirappalli%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1752427396654!5m2!1sen!2sin"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Script -->
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const text =
+                "New Enquiry from JAFI Associates Website:\n\n" +
+                "  Name: " + name + "\n" +
+                "  Email: " + email + "\n" +
+                "  Phone: " + phone + "\n" +
+                "  Message: " + message + "\n\n" +
+                "  Source: JAFI Website Contact Form";
+
+            const whatsappNumber = "919047848420"; // your WhatsApp number
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+            document.getElementById("thanksMessage").classList.remove("hidden");
+
+            setTimeout(() => {
+                window.open(whatsappURL, "_blank");
+            }, 1000);
+
+            return false;
+        }
+    </script>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="relative bg-white text-gray-800 font-sans border-t border-gray-200 py-12 overflow-hidden">
+
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- Logo & Address -->
+            <!-- Your footer content (same as before) -->
+            <!-- ... -->
+
+            <div class="space-y-4">
+                <!-- Replace src with your actual logo path -->
+                <img src="./JAFI - LOGO/1745836853590044_1604005931.png" alt="JAFI Associates Logo" class="w-32">
+                <p class="text-sm text-#1e3a8a font-semibold leading-relaxed">
+                    Chennai & Trichy<br />
+
+                </p>
+                <p class="text-sm text-gray-600 font-medium">+91 90478 48420</p>
+                <p class="text-sm text-gray-600 font-medium">finance@jafiassociates.com</p>
+
+                <!-- Social Icons -->
+                <div class="flex gap-4 pt-4">
+                    <a href="#"
+                        class="w-9 h-9 border border-gray-400 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="w-9 h-9 border border-gray-400 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:text-white transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#"
+                        class="w-9 h-9 border border-gray-400 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:text-white transition">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="w-9 h-9 border border-gray-400 rounded-full flex items-center justify-center hover:bg-cyan-500 hover:text-white transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-base font-semibold mb-4 text-cyan-600">Quicklinks</h4>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="#" class="hover:text-cyan-500">Home</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">About</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Services</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Services -->
+            <div>
+                <h4 class="text-base font-semibold mb-4 text-cyan-600">Popular Services</h4>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="#" class="hover:text-cyan-500">Registrations</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">Income Tax Filing</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">GST Filing</a></li>
+                    <li><a href="#" class="hover:text-cyan-500">CFO Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Contact -->
+            <div>
+                <h4 class="text-base font-semibold mb-4 text-cyan-600">Need Help?</h4>
+                <p class="text-sm text-gray-600 mb-4">Have questions? Let's talk.</p>
+                <a href="https://wa.me/919047848420" target="_blank"
+                    class="inline-block px-4 py-2 bg-cyan-500 text-white rounded-md hover:bg-cyan-600 transition text-sm font-medium">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="mt-12 border-t border-gray-300 pt-6 text-center  text-sm text-gray-500">
+            &copy; 2025 JAFI Associates. All rights reserved.
+        </div>
     </footer>
+    <!-- Footer End -->
 
 
+
+
+    <!-- Floating button  -->
+    <!-- Floating "Let's Chat!" Button (Opens WhatsApp) -->
+    <!-- <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+            <button
+                class="flex items-center gap-2 px-5 py-2 bg-blue-900 text-white rounded-xl shadow-lg hover:bg-blue-800 transition-all duration-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8c0 1.657.672 3.157 1.758 4.243L4 20l3.757-1.758A7.963 7.963 0 0012 20z" />
+                </svg>
+                <span class="font-semibold">Let's Chat!</span>
+            </button>
+        </a>
+    </div> -->
+
+
+
+
+    <!-- js SCRIPT  -->
+    <script>
+        // Swiper slider
+        const heroSwiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            effect: "fade",
+        });
+
+        // Animated heading text
+        const texts = ["Focus On Your Business", "Leave Finances to Us", "Grow With Experts"];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % texts.length;
+            document.getElementById("hero-text").textContent = texts[index];
+        }, 3000);
+
+
+        // who we are slide 
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 800, // Smooth and steady transition
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // Only allow slideNext on click for "Who We Are" slide (first slide)
+            on: {
+                init: function () {
+                    const slides = document.querySelectorAll(".swiper-slide");
+                    slides.forEach((slide, idx) => {
+                        if (idx === 0) { // Only first slide
+                            slide.addEventListener("click", () => {
+                                swiper.slideNext();
+                            });
+                        }
+                    });
+                }
+            }
+        });
+        });
+
+        // Touch on slide: go to next slide
+        document.querySelectorAll(".swiper-slide").forEach(slide => {
+            slide.addEventListener("touchstart", () => {
+                swiper.slideNext();
+            });
+        });
+
+        // Hover: pause autoplay, resume on mouse leave
+        const swiperEl = document.querySelector(".mySwiper");
+        swiperEl.addEventListener("mouseenter", () => {
+            swiper.autoplay.stop();
+        });
+        swiperEl.addEventListener("mouseleave", () => {
+            swiper.autoplay.start();
+        });
+
+    </script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- we r script -->
+
+    <!-- Swiper Config -->
+    <script>
+        // Initialize Swiper for "Who We Are" section
+        var swiperWhoWeAre = new Swiper(".mySwiper", {
+            loop: true, // Enable continuous loop mode
+            effect: "fade", // Use fade transition between slides
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+
+
+    <!-- Floating AI Assistant Button -->
+    <div class="fixed bottom-6 right-6 z-50 group">
+        <a href="https://wa.me/919047848420?text=Hi%20JAFI%2C%20I%20need%20help%20with%20your%20services."
+            target="_blank"
+            class="flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out">
+            🤖 JAFI Assistant
+        </a>
+
+        <!-- Tooltip on hover -->
+        <div
+            class="absolute bottom-full mb-2 right-0 bg-white text-blue-900 text-xs font-medium px-4 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition duration-300">
+            📞 Need help? Call<br>
+            90478 48420
+        </div>
+    </div>
+
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const thankYou = document.getElementById("thankYouMsg");
+            thankYou.classList.remove("hidden");
+
+            const text = `📩 New Enquiry from JAFI Associates Website:
+
+                👤 Name: ${name}
+                📧 Email: ${email}
+                📞 Phone: ${phone}
+                💬 Message: ${message}
+
+                🔗 Source: JAFI Website Contact Form`;
+
+            const whatsappURL = `https://wa.me/919047848420?text=${encodeURIComponent(text)}`;
+
+            // Wait 2.5 sec before redirect
+            setTimeout(() => {
+                window.open(whatsappURL, "_blank");
+                document.getElementById("contactForm").reset();
+                thankYou.classList.add("hidden");
+            }, 2500);
+        }
+    </script>
 
 </body>
+
+
 
 </html>
